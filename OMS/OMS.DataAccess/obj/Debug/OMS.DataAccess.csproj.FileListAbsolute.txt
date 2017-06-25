@@ -1,0 +1,11 @@
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.DataAccess\bin\Debug\OMS.DataAccess.dll
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.DataAccess\bin\Debug\OMS.DataAccess.pdb
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.DataAccess\obj\Debug\OMS.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.DataAccess\obj\Debug\OMS.DataAccess.dll
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.DataAccess\obj\Debug\OMS.DataAccess.pdb
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.DataAccess\bin\Debug\OMS.BusinessEntities.dll
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.DataAccess\bin\Debug\OMS.BusinessEntities.pdb
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml

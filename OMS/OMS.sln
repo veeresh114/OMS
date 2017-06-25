@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.Presentation", "OMS\OMS.Presentation.csproj", "{BE9DA946-BE98-45A5-BFDB-8CFBDE735FED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{DF82FCBA-CD4E-481E-8B52-2EFF92DBF5AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{28255A78-3A5B-433D-A194-AF9ED85B9EEF}"
+	ProjectSection(SolutionItems) = preProject
+		WE-settings.xml = WE-settings.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.BusinessEntities", "OMS.BusinessEntities\OMS.BusinessEntities.csproj", "{78CF48D8-D84D-4C78-A4DA-1EE84937762C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.BusinessComponents", "OMS.BusinessComponents\OMS.BusinessComponents.csproj", "{5ED0159A-0342-4ED4-B0C5-34177A21531E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.DataAccess", "OMS.DataAccess\OMS.DataAccess.csproj", "{F4A1C53E-44CD-47B1-8255-779717C75336}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE9DA946-BE98-45A5-BFDB-8CFBDE735FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9DA946-BE98-45A5-BFDB-8CFBDE735FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9DA946-BE98-45A5-BFDB-8CFBDE735FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE9DA946-BE98-45A5-BFDB-8CFBDE735FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF82FCBA-CD4E-481E-8B52-2EFF92DBF5AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF82FCBA-CD4E-481E-8B52-2EFF92DBF5AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF82FCBA-CD4E-481E-8B52-2EFF92DBF5AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF82FCBA-CD4E-481E-8B52-2EFF92DBF5AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78CF48D8-D84D-4C78-A4DA-1EE84937762C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78CF48D8-D84D-4C78-A4DA-1EE84937762C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78CF48D8-D84D-4C78-A4DA-1EE84937762C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78CF48D8-D84D-4C78-A4DA-1EE84937762C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED0159A-0342-4ED4-B0C5-34177A21531E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED0159A-0342-4ED4-B0C5-34177A21531E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED0159A-0342-4ED4-B0C5-34177A21531E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED0159A-0342-4ED4-B0C5-34177A21531E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A1C53E-44CD-47B1-8255-779717C75336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A1C53E-44CD-47B1-8255-779717C75336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A1C53E-44CD-47B1-8255-779717C75336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A1C53E-44CD-47B1-8255-779717C75336}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

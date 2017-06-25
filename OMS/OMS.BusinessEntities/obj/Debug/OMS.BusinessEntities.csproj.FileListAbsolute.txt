@@ -1,0 +1,5 @@
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessEntities\bin\Debug\OMS.BusinessEntities.dll
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessEntities\bin\Debug\OMS.BusinessEntities.pdb
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessEntities\obj\Debug\OMS.BusinessEntities.dll
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessEntities\obj\Debug\OMS.BusinessEntities.pdb
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessEntities\obj\Debug\OMS.BusinessEntities.csprojResolveAssemblyReference.cache

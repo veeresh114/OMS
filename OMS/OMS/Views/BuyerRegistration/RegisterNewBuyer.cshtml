@@ -1,0 +1,255 @@
+﻿@model OMS.ViewModels.BuyerRegistrationViewModel
+
+@{
+    ViewBag.Title = "RegisterNewBuyer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/RegisterNewBuyer.js")
+<div class="row">
+    <div class="clo-lg-12 col-md-12 col-sm-12">
+        <div class="row  panelbar">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4>Register New Buyer</h4>
+            </div>
+        </div>
+
+        <div class="panelgap"></div>
+        @using (Html.BeginForm("RegisterNewBuyer", "BuyerRegistration"))
+        {
+            <div class="row ">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-centered " style="border: 1px solid black;">
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row ">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ">
+                            @Html.ValidationSummary(false, "Please fix the following errors and then submit the form")
+                        </div>
+                    </div>
+                    @if (Model.ValidationResult != null)
+                    { 
+                        <div class="row ">
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ">
+                                @* @Html.Partial("ValidationResult",Model.ValidationResult)*@
+                                @Model.ValidationResult.Id || &nbsp&nbsp ||@Model.ValidationResult.ValidationMessage
+                            </div>
+                        </div>
+                    }
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row ">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.UserName, "Username", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.TextBoxFor(m => m.UserName, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.UserName)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.Password, "Password", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.PasswordFor(m => m.Password, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.Password)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.ConfirmPassword, "Confirm Password", new { @class = "Label" })
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.ConfirmPassword)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.BuyerId, "Buyer Id", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.TextBoxFor(m => m.BuyerId, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.BuyerId)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.CompanyName, "Company Name", new { @class = "Label" })
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.TextBoxFor(m => m.CompanyName, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.CompanyName)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.CompanyDescription, "Company Description", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.TextAreaFor(m => m.CompanyDescription, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.CompanyDescription)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.CompanyContactName, "Company Contact Name", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.TextBoxFor(m => m.CompanyContactName, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.CompanyContactName)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.EmailAddress, "Company Email Address", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.TextBoxFor(m => m.EmailAddress, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.EmailAddress)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.ContactNo, "Company Contact No", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.TextBoxFor(m => m.ContactNo, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.ContactNo)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.PermanentAddress, "Company Permanent Address", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.TextAreaFor(m => m.PermanentAddress, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.PermanentAddress)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.Label("Is Shipping Address Same As Permanent Address?", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+                            @foreach (var val in Model.AreBothAddressSameOptions)
+                            {
+                                @Html.RadioButtonFor(m => m.AreBothAddressSame, val.Value) @val.Text  @:&nbsp
+                            }
+                            @Html.ValidationMessageFor(model => model.AreBothAddressSame)
+
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.ShippingAddress, "Company Shipping Address", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.TextAreaFor(m => m.ShippingAddress, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.ShippingAddress)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.Country, "Country", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.DropDownListFor(m => m.Country, new SelectList(Model.Countries, "Value", "Text"), "--Select--", new { @class = "Dropdown" })
+                            @Html.ValidationMessageFor(model => model.Country)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.Cities, "City", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.DropDownListFor(m => m.City, new SelectList(Model.Cities, "Value", "Text"), "--Select--",new { @class = "Dropdown" })
+                        </div>
+                    </div>
+
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            @Html.LabelFor(m => m.BankAccountNo, "Bank Account No", new { @class = "Label" })
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            @Html.TextBoxFor(m => m.BankAccountNo, new { @class = "TextBox" })
+                            @Html.ValidationMessageFor(model => model.BankAccountNo)
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                    <div class="panelgap"></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="text-align: right">
+                            <button type="submit" value="Submit">Submit</button>
+                        </div>
+                    </div>
+                    <div class="panelgap"></div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        // $("#Country").prepend("<option value='Select'  selected='selected'>--Select--</option>");
+        //$("#Cities").prepend("<option value='Select'  selected='selected'>--Select--</option>");
+    });
+
+    $("#AreBothAddressSame").click(function () {
+        debugger;
+        var selection = $(this).val();
+        alert(selection);
+        if (selection == "YES") {
+            var pAddress = $("#PermanentAddress").val()
+            $("#ShippingAddress").val(pAddress);
+        }
+        else {
+            $("#ShippingAddress").val("");
+        }
+    });
+    function GetCityList() {
+        $("#Country").change(function () {
+           var country= $("#Country").val();
+            $.ajax({
+                url: '~/BuyerRegistration/GetCityList',
+                data: { SelectedCountry: country },
+                dataType: 'json',
+                method: 'post',
+                success: function (response, status, xhr) {
+                   
+                }
+                
+            });
+        });
+    }
+</script>

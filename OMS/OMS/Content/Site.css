@@ -1,0 +1,180 @@
+﻿.content-wrapper {
+margin:0px 0px 0 15px;
+padding:0px 0px 0 0px; 
+position:relative;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+.contentAreaPadding {
+padding-left:15px;
+padding-right:15px;
+}
+
+.content{
+background-color:#fff;
+}
+.OMSEnvHeader {
+height:60px;
+background-color: #2668ac;
+}
+.OMSEnvFooter{
+height:40px;
+background-color:  #2668ac;
+}
+
+.panelgap {
+height:3px;
+}
+/*----------------------------------------------*/
+ .ui-menu {
+  width: 200px;
+ }
+.panelbar {
+height:40px;
+background:#5ea7f1;
+}
+.Label {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 10px;
+    margin-bottom:2px;
+}
+.TextBox {
+    width:250px;
+}
+.formlabel {
+text-align:right;
+
+}
+.col-centered {
+float:none;
+margin:0 auto;
+}
+.tBoxCustom {
+width:200px;
+}
+/*----------------Fonts--------------------*/
+/*h1, h2, h3,
+h4, h5, h6 {
+    color: #000;
+    margin-left: 0px 0 0 0;
+   
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+h5 a:link, h5 a:visited, h5 a:active {
+        padding: 0;
+        text-decoration: none;
+    }*/
+
+/*------------------------------------------*/
+
+.drop_menu {
+	background:#5ea7f1;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	height:40px;
+	background-image:url('bg.jpg');
+}
+.drop_menu li { float:left; }
+.drop_menu li a {
+	padding:12px 20px;
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	font:12px arial, verdana, sans-serif;
+	border-right:1px solid #fff;
+}
+
+/* Submenu */
+
+.drop_menu li:hover { position:relative; background:#298cf1;  }
+.drop_menu ul {
+	position:absolute;
+	left:-100px;
+	top:-100px;
+	list-style-type:none;
+    z-index:1;
+}
+.drop_menu li:hover ul {
+	left:0px;
+	top:39px;
+	padding:0px;
+    position:absolute;
+    width:0px;
+}
+
+.drop_menu li:hover ul li a {
+	padding:10px;
+	display:block;
+	width:168px;
+	text-indent:15px;
+	background-color:#5ea7f1;
+    border-bottom:1px solid #fff;
+}
+
+.drop_menu li:hover ul li a:hover { background:#298cf1;  }
+/*submenu 2*/
+.drop_menu ul ul{
+    display:none;
+	position:absolute;
+	list-style-type:none;
+    z-index:1;
+}
+.drop_menu li li:hover{ position:relative; background:#75809a;  }
+
+.drop_menu li li:hover ul {
+    display:inline-block;
+	left:168px;
+	top:0px;
+	background:#5ea7f1;
+	padding:0px;
+}
+.drop_menu li li:hover ul li a {
+	/*padding:10px;*/
+ 
+    display:block;
+	width:168px;
+	text-indent:15px;
+	background-color:#5ea7f1 ;
+}
+ 
+/* styles for validation helpers */
+.field-validation-error {
+  color: #ff0000;
+   font-size: 12px;
+}
+
+.validation-summary-errors {
+    color: #ff0000;
+    font-size: 12px;
+}
+
+.validation-summary-valid {
+    display: none;
+}

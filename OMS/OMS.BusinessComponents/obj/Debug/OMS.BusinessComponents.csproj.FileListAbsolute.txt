@@ -1,0 +1,9 @@
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessComponents\bin\Debug\OMS.BusinessComponents.dll
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessComponents\bin\Debug\OMS.BusinessComponents.pdb
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessComponents\obj\Debug\OMS.BusinessComponents.csprojResolveAssemblyReference.cache
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessComponents\obj\Debug\OMS.BusinessComponents.dll
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessComponents\obj\Debug\OMS.BusinessComponents.pdb
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessComponents\bin\Debug\OMS.BusinessEntities.dll
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessComponents\bin\Debug\OMS.DataAccess.dll
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessComponents\bin\Debug\OMS.BusinessEntities.pdb
+C:\Users\Veeresh\documents\visual studio 2012\Projects\OMS\OMS.BusinessComponents\bin\Debug\OMS.DataAccess.pdb

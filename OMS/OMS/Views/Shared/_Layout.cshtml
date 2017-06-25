@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        
+        @Styles.Render("~/Content/themes/base/css")
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryval")
+     
+
+        
+    </head>
+ <body>
+ <div class="content-wrapper"> 
+ <div class="container-fluid " style="border:1px solid black; ">
+        <div class="row contentAreaPadding">    
+        @Html.Partial("_SiteHeader")
+            </div>
+
+     <div class=" row contentAreaPadding panelgap"></div>
+
+     <div class="row " >
+               <div class="drop" >
+                    <ul class="drop_menu">
+                            <li><a href='#'>Home</a></li>
+                            <li><a href='#'>PO Processing & Management</a>
+                                <ul>
+                                    <li><a href='#'>Buyer Registration</a>
+	                                        <ul >
+	                                                <li>@Html.ActionLink("New Registration","RegisterNewBuyerGet","BuyerRegistration")</li>
+	                                                <li><a href='#'>Update Buyer</a></li>
+	                                                 <li><a href='#'>View Buyer</a></li>
+                                                     <li><a href='#'>View All Buyers</a></li>
+                                                     <li><a href='#'>Delete Buyer</a></li>
+	                                        </ul>
+                                    </li>
+                                    <li><a href='#'>Stock Maintenance</a>
+                                            <ul>
+                                                <li><a href="#">Add New Product</a></li>
+                                                <li><a href="#">View Product Details</a></li>
+                                                <li><a href="#">Update Stock</a></li>
+                                                 <li><a href="#">Delete Stock</a></li>
+                                            </ul>
+                                    </li>
+                                    <li><a href='#'>Stock Maintenance</a>
+                                            <ul>
+                                                <li><a href="#">Place New Purchase Order</a></li>
+                                                <li><a href="#">Accept Purchase Order</a></li>
+                                                <li><a href="#">Update/Amend Purchase Order</a></li>
+                                                <li><a href="#">Cancel Purchase Order</a></li>
+                                                <li><a href="#">Track Order Status</a></li>
+                                                 <li><a href="#">View Order Line Items</a></li>
+                                            </ul>
+                                     </li>
+                                </ul>
+                            </li>
+                            <li><a href='#'>Invoice Processing And Shipment</a>
+	                            <ul>
+	                                <li><a href='#'>Supplier Management</a>
+                                        <ul >
+	                                         <li><a href='#'>Add New Supplier</a></li>
+	                                         <li><a href='#'>View Supplier</a></li>
+	                                         <li><a href='#'>Update Supplier Details</a></li>
+	                                         <li><a href='#'>Delete Supplier</a></li>
+	                                    </ul>
+	                                </li>
+	                                <li><a href='#'>Shipment Process</a>
+                                         <ul >
+	                                         <li><a href='#'>Create ASN</a></li>
+	                                         <li><a href='#'>Accept ASN</a></li>
+	                                         <li><a href='#'>Reject ASN</a></li>
+	                                         <li><a href='#'>Initiate Shipment</a></li>
+	                                         <li><a href='#'>Search Shipment Details</a></li>
+	                                    </ul>
+	                                </li>
+	                                <li><a href='#'>Invoice Processing</a>
+                                         <ul>
+	                                         <li><a href='#'>Generate Invoice</a>
+                                                   <ul >
+                                                       <li><a href='#'>Generate Draft Invoice</a></li>
+                                                   </ul>
+	                                         </li>
+                                             <li><a href='#'>View Invoice</a></li>
+	                                         <li><a href='#'>Finalise Invoice</a></li>
+	                                         <li><a href='#'>Update Delivery status</a></li>
+	                                         <li><a href='#'>Approve Invoice</a></li>
+                                             <li><a href='#'>Reject Invoice</a></li>
+                                         </ul>
+	                                 </li>
+	                            </ul>
+                            </li>
+                            <li><a href='#'>Payment Processing</a>
+	                            <ul>
+	                                <li><a href='#'>Payment Initiation</a>
+                                        <ul >
+	                                         <li><a href='#'>View Pending Invoices</a></li>
+	                                         <li><a href='#'>Initiate Payment</a></li>
+	                                         <li><a href='#'>Delete Payment Details</a></li>
+	                                    </ul>
+	                                </li>
+	                                <li><a href='#'>RA & Order Completion</a>
+                                        <ul >
+	                                         <li><a href='#'>Create RA</a></li>
+	                                         <li><a href='#'>Update RA</a></li>
+	                                         <li><a href='#'>Accept Payment</a></li>
+                                             <li><a href='#'>Update RA</a></li>
+	                                         <li><a href='#'>View Completed Orders</a></li>
+	                                    </ul>
+	                                </li>
+                                    <li><a href='#'>Track Payment</a>
+                                        <ul >
+	                                         <li><a href='#'>Search PO</a></li>
+	                                         <li><a href='#'>Send Payment Notification</a></li>
+	                                         <li><a href='#'>View Payment Notification</a></li>
+                                             <li><a href='#'>Create Payment Defaulters</a></li>
+	                                         <li><a href='#'>Create Product/Service Review</a></li>
+	                                    </ul>
+	                                </li>
+	                            </ul>
+                            </li>
+                    </ul>
+                    </div>
+        
+     </div>
+      <div class=" row contentAreaPadding panelgap"></div>
+    
+     <div class="row contentAreaPadding content"> 
+         @RenderBody()
+      </div>
+      
+    <div class=" row contentAreaPadding panelgap"></div>
+     <div class=" row contentAreaPadding panelgap"></div>
+
+    <div class="row contentAreaPadding">
+      @Html.Partial("_SiteFooter") 
+        </div>
+
+     
+      @RenderSection("Scripts", required: false)
+    
+</div> 
+   </div>       
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        var subli=$('ul.drop_menu li');
+        $('ul.drop_menu>li').each(function () {
+            $(this).hover(function () {
+                $(this).attr('style', 'border-top:1px solid #fff;border-bottom:1px solid #fff');
+            }, function () {
+                $(this).attr('style', 'border-top:1px solid #5ea7f1;border-bottom:1px solid #5ea7f1');
+            })
+        });
+    });
+  
+</script>
